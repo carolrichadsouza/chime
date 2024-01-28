@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="150dp"
+        android:src="@drawable/user"
+        app:civ_border_color="#FF000000" />
+
+    <ImageView
+        android:id="@+id/addprofileimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="180dp"
+        android:layout_marginTop="-20dp"
+        android:background="@color/white"
+        android:foregroundGravity="center"
+        android:src="@drawable/add">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtprofilename"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/txtprofilestatus"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/background"
+        android:hint="Status"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/etprofilename"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:hint="Name"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etprofilestatus"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:hint="Status"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/saveprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:width="170dp"
+        android:background="@drawable/buttonbackground"
+        android:shadowColor="#EF0606"
+        android:text="Save"
+        android:textColor="#EFEBEB"
+        android:textColorHighlight="#0B0101"
+        android:textColorLink="#070101"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/updateprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="150dp"
+        android:width="170dp"
+        android:background="@drawable/buttonbackground"
+        android:shadowColor="#EF0606"
+        android:text="Update"
+        android:textColor="#EFEBEB"
+        android:textColorHighlight="#0B0101"
+        android:textColorLink="#070101"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

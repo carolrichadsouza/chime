@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/chimelogin"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chime"></ImageView>
+
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_below="@+id/chimelogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:ems="10"
+        android:hint="Username / Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="13dp" />
+
+    <EditText
+        android:id="@+id/loginpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="13dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:background="@drawable/buttonbackground"
+        android:shadowColor="#EF0606"
+        android:text="LOGIN"
+        android:textColor="#EFEBEB"
+        android:textColorHighlight="#0B0101"
+        android:textColorLink="#070101"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="558dp"
+        android:text="Don't have an account?"
+        android:textSize="20sp"
+        android:textColor="@color/black"></TextView>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:width="200dp"
+        android:background="@drawable/buttonbackground"
+        android:shadowColor="#EF0606"
+        android:text="signup"
+        android:textColor="#EFEBEB"
+        android:textColorHighlight="#0B0101"
+        android:textColorLink="#070101"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
